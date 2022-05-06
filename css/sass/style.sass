@@ -1,0 +1,579 @@
+*
+	font-family: "Open Sans", sans-serif
+
+.container
+	padding: 0
+
+.row
+	margin: 0
+	
+header
+	position: relative
+	height: 70px
+	.container
+		display: flex
+		justify-content: space-between
+		align-items: center
+nav
+	width: 100%
+	padding: 16px 0
+	position: fixed
+	width: 100%
+	height: 70px
+	background-color: #fff
+	z-index: 5
+
+.hamburger
+	display: none
+
+.menu
+	display: flex
+	justify-content: space-between
+	margin: 0
+	list-style-type: none
+	&_link
+		color: #212121
+		font-size: 21px
+		font-weight: 400
+		text-decoration: none
+		&:hover
+			color: #00897b
+	&_item
+		padding-right: 50px
+		&:last-child
+			padding-right: 0
+
+
+
+.WebProject
+	padding: 160px 0 70px 0
+	min-height: 660px
+	background: url(../../img/header_bg.jpg) center (center/cover) no-repeat
+	display: flex
+	flex-direction: column
+	align-items: center
+	&_text 
+		&_title
+			font-family: 'Open Sans', sans-serif
+			font-size: 60px
+			font-weight: 500
+			color: #fff
+			text-align: center
+			margin-bottom: 25px
+		&_descr
+			font-family: 'Open Sans', sans-serif
+			font-size: 22px
+			font-weight: 400
+			color: #fff
+			text-align: center
+			margin-bottom: 110px
+	&_btns
+		display: flex
+		justify-content: center
+		button.first_btn
+			transition: 0.3s
+			margin-right: 25px
+			width: 220px
+			height: 70px
+			border: 3px solid #f8f8f8
+			background-color: rgba(0, 0, 0, 0)
+			font-family: Roboto
+			font-size: 20px
+			font-weight: 700
+			color: #fff
+			&:hover
+				background-color: #fff
+				color: #000
+            
+			&:active
+				transform: scale(90%)
+                box-shadow: 0 5px 10px rgb(0, 0, 0,)
+		button.second_btn
+			transition: 0.3s
+			width: 220px
+			height: 70px
+			border: 3px solid #00897b
+			background-color: rgba(0, 0, 0, 0)
+			font-family: Roboto
+			font-size: 20px
+			font-weight: 700
+			color: #00897b
+			&:hover
+				color: #fff
+				background-color: #00897b
+				border-color: #00897b
+			&:active
+				transform: scale(90%)
+				box-shadow: 0 5px 10px rgb(0, 0, 0,)
+	&_arrow
+		display: block
+		font-size: 30px
+		color: #fff
+		text-align: center
+		padding-top: 100px
+		animation: arrow_move 2s infinite
+		
+
+section.about
+	min-height: 670px
+	padding: 120px 0 125px 0
+	.container
+		padding: 0
+		
+
+.section_title
+	color: #212121
+	font-family: "Open Sans", sans-serif
+	font-size: 30px
+	font-weight: 700
+	text-align: center
+
+.section_descr
+	color: #212121
+	text-align: center
+	font-size: 16px
+	font-weight: 400
+	margin-top: 26px
+	text-align: center
+
+.blocks
+	margin-top: 125px
+	justify-content: space-between
+	.internet_block , .transfer_block , .head_block
+		display: flex
+		flex-direction: column
+		align-items: center
+		margin: 0
+		padding: 0
+		text-align: center
+		width: 300px
+		img
+			margin-bottom: 38px
+		h3
+			margin-bottom: 25px
+		p
+			color: #212121
+			font-family: "Open Sans", sans-serif
+			font-size: 15px
+			font-weight: 400
+
+
+.services
+	min-height: 1400px
+	background-color: #e4fdf9
+	padding: 170px 0 120px 0
+	.row
+		display: flex
+		justify-content: center
+	.row_1
+		 margin-bottom: 110px
+	.block
+		justify-content: space-around
+	.block_item
+		width: 370px
+		min-height: 440px
+		background-color: #ffffff
+		margin-bottom: 30px
+		display: flex
+		flex-direction: column
+		align-items: center
+		padding: 58px 50px 50px 50px
+		position: relative
+		z-index: 1
+		transition: 0.3s
+		&:nth-child(3)
+			margin-right: 0
+		&:nth-child(6)
+			margin-right: 0
+		&:before
+			content: " "
+			display: block
+			width: 56px
+			height: 63px
+			background: url('../../img/smartphone_copy.png') center (center/cover) no-repeat
+			margin: 0 auto
+		&:hover
+			*:not(button)
+				color: #fff
+			background-color: #00897b
+			box-shadow: 0 0 10px grey
+			&:before
+				background: url('../../img/smartphone.png') center (center/cover) no-repeat
+		h2
+			color: #212121
+			font-family: "Open Sans", sans-serif
+			font-size: 20px
+			font-weight: 500
+			margin-top: 40px
+		p
+			font-family: "Open Sans", sans-serif
+			font-size: 15px
+			font-weight: 400
+			margin-top: 25px
+			text-align: center
+			margin-bottom: 100px
+		button
+			width: 150px
+			height: 55px
+			border: 2px solid #212121
+			background-color: rgba(0, 0, 0, 0)
+			position: absolute
+			bottom: 50px
+			font-family: "Open Sans", sans-serif
+			font-size: 20px
+			font-weight: 400
+			transition: 0.3s
+			&:hover
+				color: #ffffff
+				border: 2px solid #ffffff
+			&:active
+				transform: scale(90%)
+				box-shadow: 0 5px 10px rgba(0, 0, 0, .5)
+
+
+.LatestWorks
+	padding: 100px 0 
+	min-height: 1400px
+	.row
+		justify-content: center
+	&_btns
+		display: flex
+		justify-content: center
+		margin-top: 110px
+		&_item
+			transition: 0.3s
+			padding: 10px 20px
+			height: 55px
+			border: 3px solid #00897b
+			background-color: rgba(0, 0, 0, 0)
+			font-family: Roboto
+			font-size: 20px
+			font-weight: 400
+			color: #000
+			margin-right: 15px
+			&:last-child
+				margin-right: 0
+			&:hover
+				color: #fff
+				background-color: #00897b
+				border-color: #00897b
+			&:active
+				transform: translateY(4px)
+				box-shadow: 0 5px 10px rgb(0, 0, 0,)
+			&:focus
+				background-color: #00897b
+				color: #fff
+	.gallery
+		margin-top: 110px
+		&_item
+			max-width: 370px
+			max-height: 370px
+			padding: 0
+			margin: 0
+			position: relative
+			z-index: 2
+			&:nth-child(2)
+				margin: 0 20px 0
+			&:nth-child(5)
+				margin: 0 20px 0				
+			&::before
+				padding-top: calc( 50% - 20px )
+				padding-left: calc( 50% - 60px  )
+				content: "Lorem Ipsum"
+				color: #fff
+				font-size: 20px
+				width: 370px
+				height: 370px
+				background-color: rgba(0, 0, 0, 0.65 )
+				position: absolute
+				left: 0px
+				top: 0px
+				z-index: 4
+				cursor: pointer
+				display: none
+			&:hover
+				&::before
+					display: block
+			&:nth-child(1)
+				margin-bottom: 20px
+			&:nth-child(2)
+				margin-bottom: 20px
+			&:nth-child(3)
+				margin-bottom: 20px
+				
+.more_btn
+	transition: 0.3s
+	padding: 10px 20px
+	width: 200px
+	height: 60px
+	border: 3px solid #00897b
+	background-color: #00897b
+	font-family: Roboto
+	font-size: 20px
+	font-weight: 500
+	color: #fff
+	margin-top: 120px
+	margin-left: 50%
+	transform: translateX(-50%)
+	&:hover
+		color: #00897b
+		background-color: #fff
+		border-color: #00897b
+	&:active
+		transform: scale(95%) translate(-50%) translateX(-3px)
+			
+			
+.plans
+	min-height: 1150px	
+	background-color: #060c0b16
+	padding: 120px 0 0 0
+	.row
+		justify-content: center	
+	.tarif_block
+		justify-content: space-evenly
+		margin-top: 110px
+		&_item
+			width: 370px
+			height: 670px
+			background-color: #fff
+			padding: 0
+			overflow: hidden
+			position: relative
+			display: flex
+			justify-content: center
+			transition: 0.2s
+			&:hover
+				box-shadow: 0 3px 25px rgba(0, 0, 0, 0.35)
+			.background
+				background-color: #3949ab
+				height: 210px
+				width: 120%
+				position: absolute
+				transform: rotate(-5deg) translate(0, -8%)
+				z-index: 0
+			.content
+				position: absolute
+				top: 44px
+				z-index: 1		
+				display: flex
+				flex-direction: column
+				align-items: center
+				.name
+					color: #ffffff
+					font-size: 25px
+					font-weight: 400
+					margin-bottom: 9px
+				.price
+					font-size: 17px
+					font-weight: 400
+					color: #fff
+					position: relative
+					margin-bottom: 110px
+					&::before
+						content: "\0024"
+						position: absolute
+						top: 12px
+						left: -12px
+						font-size: 20px
+					&_num
+						font-size: 46px
+				&_info
+					color: #212121
+					font-size: 18px
+					font-weight: 300
+				&_hr
+					border: none
+					border-bottom: 1px solid black
+					width: 180px
+					margin: 8px 0 30px
+				&_btn
+					width: 180px
+					height: 60px
+					border: 2px solid #000
+					font-size: 20px
+					font-weight: 400
+					color: #212121
+					background-color: rgba(0, 0, 0, 0)		
+					margin-top: 25px
+					transition: 0.2s
+					&:hover
+						color: #fff
+						background-color: #00897b
+						border-color: #00897b
+					&:active
+						transform: scale(90%)
+
+
+.blog
+	min-height: 1800px
+	background-color: #e4fdf9
+	padding: 115px 0 0 0
+	.row
+		justify-content: center
+	.blog_content
+		padding-top: 100px
+		display: flex
+		flex-direction: column
+		align-items: center
+		&_section
+			display: flex
+			flex-direction: row
+			width: 90%
+			&:nth-child(2)
+				justify-content: space-between				
+			&_text
+				display: flex
+				flex-direction: column
+				margin-left: 30px
+				margin-top: 60px
+				.blog_content_title
+					color: #212121
+					font-size: 25px
+					font-weight: 500
+					font-style: normal
+					margin-bottom: 20px
+					text-decoration: none
+					&:hover
+						color: #00897b
+				.blog_content_descr
+					color: #212121
+					font-size: 15px
+					font-weight: 400
+					font-style: normal
+					width: 450px
+					line-height: 22px
+				.blog_content_metrics
+					display: flex
+					flex-direction: row
+					justify-content: flex-start
+					margin-bottom: 30px
+					.blog_content_metrics_date
+						margin-right: 35px
+						&::before
+							content: "\1F4C5"
+							margin-right: 5px
+					.blog_content_metrics_section
+						&::before
+							content: "\1F4C4"
+							margin-right: 5px
+		&_btn
+			width: 220px
+			height: 70px
+			background-color: #00897b
+			font-size: 20px
+			font-weight: 700
+			color: #fff
+			border: none
+			margin-top: 110px
+			transition: 0.2s
+			&:hover
+				background-color: rgba(0, 0, 0, 0)
+				border: 3px solid #00897b
+				color: #00897b
+			&:active
+				transform: scale(90%)
+
+
+.form
+	padding: 120px 0 110px 0
+	min-height: 1250px
+	background: url("../../img/2-layers.png") center (center/cover) no-repeat
+	.row
+		justify-content: center
+	.section_title-white, .section_descr-white
+		color: #fff
+	&_icons
+		display: flex
+		flex-direction: row
+		justify-content: space-around
+		&_block
+			margin-top: 100px
+			max-width: 240px
+			display: flex
+			flex-direction: column
+			align-items: center
+			.form_icons_img
+				max-width: 100px
+			.form_icons_link
+				color: #ffffff
+				font-size: 18px
+				font-weight: 400
+				text-align: center
+				text-decoration: none
+				margin-top: 40px
+				&:hover
+					color: #00897b
+					cursor: pointer
+			.form_icons_link-second
+				margin-top: 0
+	.form_fill
+		display: flex
+		flex-direction: column
+		width: 80%
+		margin: 80px auto 0
+		.first_line
+			width: 100%
+			display: flex
+			flex-direction: row
+			justify-content: space-between
+			margin-bottom: 30px
+			&_input
+				width: 500px
+				height: 64px
+				border-radius: 10px
+				background-color: #fff
+				font-size: 18px
+				padding: 8px
+		.second_line
+			display: flex
+			flex-direction: row
+			width: 100%
+			margin-bottom: 40px
+			&_input
+				width: 100%
+				height: 323px
+				border-radius: 10px
+				background-color: #fff
+				font-size: 18px
+				padding: 8px
+				resize: none
+		.third_line
+			width: 100%
+			display: flex
+			flex-direction: row
+			justify-content: flex-end
+			&_btn
+				width: 220px
+				height: 70px
+				border-radius: 10px
+				background-color: #ffffff
+				color: #212121
+				font-family: Roboto
+				font-size: 20px
+				font-weight: 700
+				transition: 0.2s
+				border: none
+				&:hover
+					border: 3px solid #00897b
+					color: #00897b
+					background-color: rgba(0, 0, 0, 0)
+				&:active
+					transform: scale(90%)
+
+.footer
+	height: 60px
+	padding: 18px 0
+	&_text
+		color: #212121
+		font-size: 18px
+		font-weight: 700
+		text-align: center
+
+@keyframes arrow_move
+    0%
+        transform: translateY(0)
+    50%
+        transform: translateY(20px)
+    100%
+        transform: translateY(0)
+@import "media"
